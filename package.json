@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "A basic front end web boilerplate aimed at rapid set up for web projects.",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^3.9.0"
-  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",

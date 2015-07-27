@@ -1,0 +1,12 @@
+mkdir dist
+mkdir dist/css
+mkdir dist/js
+mkdir dist/images
+mkdir dist/fonts
+mkdir src
+mkdir src/css
+mkdir src/js
+mkdir src/sass
+bower install
+npm install
+gulp components
