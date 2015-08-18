@@ -1,4 +1,4 @@
-# Emil's Nuke-Proof, Intergalactic Boilerplate #
+# Emil's Nuke-Proof, Intergalactic, Front End Boilerplate #
 
 ## A basic front end web boilerplate aimed at rapid set up for web projects. ##
 
@@ -10,6 +10,8 @@ Installation:
 
 2. cd into project dir
 
-3. in the terminal, execute bin/init.sh
+3. in the terminal, execute bin/init.sh by typing 'sh bin/init.sh'
+
+4. run 'gulp'
 
 4. make websites
