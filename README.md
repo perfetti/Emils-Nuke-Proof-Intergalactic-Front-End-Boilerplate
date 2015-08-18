@@ -10,7 +10,7 @@ Installation:
 
 2. cd into project dir
 
-3. in the terminal, execute bin/init.sh by typing 'sh bin/init.sh'
+3. initialise the project by typing 'sh bin/init.sh' into your terminal
 
 4. run 'gulp'
 
