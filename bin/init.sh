@@ -1,12 +1,2 @@
-mkdir dist
-mkdir dist/css
-mkdir dist/js
-mkdir dist/images
-mkdir dist/fonts
-mkdir src
-mkdir src/css
-mkdir src/js
-mkdir src/sass
-touch src/sass/main.scss
-touch src/js/main.js
 npm install
+gulp
