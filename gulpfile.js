@@ -64,6 +64,10 @@ gulp.task('vendor-fonts', ['bower'], function () {
 
 gulp.task('scripts', ['vendor-scripts'], function () {
 	return gulp.src('src/js/*.js')
+	.pipe(order([
+		'vendor.js',
+		'**/*.js'
+	]))
 	.pipe(concat('all.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('dist/js'))
@@ -88,6 +92,10 @@ gulp.task('sass', ['vendor-css'], function () {
 
 gulp.task('css', ['vendor-css'], function () {
 	return gulp.src('src/css/*.css')
+	.pipe(order([
+		'vendor.css',
+		'**/*.css'
+	]))
 	.pipe(concat_css('all.min.css'))
 	.pipe(minify())
 	.pipe(gulp.dest('dist/css'))
