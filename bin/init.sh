@@ -7,6 +7,4 @@ mkdir src
 mkdir src/css
 mkdir src/js
 mkdir src/sass
-bower install
 npm install
-gulp components
