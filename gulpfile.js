@@ -26,7 +26,6 @@ gulp.task('vendor-scripts', ['bower'], function () {
             '**/*.js'
         ]))
         .pipe(concat('vendor.js'))
-        .pipe(uglify())
         .pipe(gulp.dest('src/js/'))
         .pipe(notify({
 	      message: 'vendor js'
@@ -42,7 +41,6 @@ gulp.task('vendor-css', ['bower'], function () {
     return gulp 
         .src(bower_css)
         .pipe(concat_css('vendor.css'))
-        .pipe(minify())
         .pipe(gulp.dest('src/css/'))
         .pipe(notify({
 	      message: 'vendor css'
