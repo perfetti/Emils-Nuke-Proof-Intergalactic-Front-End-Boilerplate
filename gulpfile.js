@@ -84,13 +84,13 @@ gulp.task('sass', ['vendor-css'], function () {
 	  cascade: false
 	}))
 	.pipe(minify())
-	.pipe(gulp.dest('dist/css'))
+	.pipe(gulp.dest('src/css'))
 	.pipe(notify({
 	  message: 'all scss compiled'
 	}));
 });
 
-gulp.task('css', ['vendor-css'], function () {
+gulp.task('css', ['vendor-css', 'sass'], function () {
 	return gulp.src('src/css/*.css')
 	.pipe(order([
 		'vendor.css',
